@@ -52,6 +52,17 @@ ul{
 .bg-primary{
 	background-color:#F9423A!important;
 }
+.text-primary,
+.blog-post-title a,
+a.read-more{
+	color:#F9423A!important;
+}
+.border-primary{
+	border-color:#F9423A!important;
+}
+.bg-primary{
+	background-color:#F9423A!important;
+}
 .text-primary{
 	color:#F9423A!important;
 }
