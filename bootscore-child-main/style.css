@@ -1,0 +1,221 @@
+/*
+ Theme Name:   bootScore Child
+ Description:  bootScore Child Theme
+ Author:       bootScore
+ Author URI:   https://bootscore.me
+ Template:     bootscore-main
+ Version:      5.2.0.0
+ Text Domain:  bootscore
+*/
+
+/* 
+All style editing is done via scss/_bscore_custom.scss
+*/
+@import url("css/fonts/style.css");
+html, body, #page{height:auto;}
+body{
+	letter-spacing: 0.07em;
+	font-family: 'DM Sans Regular';
+	font-style: normal;
+	font-weight: 400;
+}
+.arial{
+	font-family: 'Arial';
+	font-style: normal;
+	font-weight: 400;
+	text-align: center;
+	letter-spacing: 0.07em;
+	color: #FFFFFF;
+}
+.gotham{
+	font-family: "Gotham", "Arial", sans-serif;
+	letter-spacing: -0.03em;
+	text-transform:uppercase;
+	font-weight: 800;
+	font-size: 18px;
+}
+a{
+	text-decoration:none;
+}
+h1,h2,h3,h4,h5{
+	font-family: "Gotham", "Arial", sans-serif;
+	letter-spacing: -0.03em;
+	text-transform:capitalize;
+	font-weight: 800;
+}
+h1{
+	text-transform:uppercase;
+}
+ul{
+	list-style:none;
+}
+.bg-primary{
+	background-color:#F9423A!important;
+}
+.text-primary{
+	color:#F9423A!important;
+}
+.border-primary{
+	border-color:#F9423A!important;
+}
+.btn{
+	font-family: 'DM Sans Regular';
+	font-style: normal;
+	font-weight:700;
+	border-radius:0;
+	font-size:14px;
+}  
+button,.site-button{
+	font-size: 18px;
+	letter-spacing: 0.15em;
+	text-transform:uppercase;
+	border-radius:0;
+	border:1px solid #F9423A;
+	background:#F9423A;
+	color:#fff;
+	padding:7px 12px;
+}
+button:hover,.site-button:hover{
+	border:1px solid #fff;
+}
+#hero-img {
+    height: 450px;
+}
+body:not(.home) #hero-img{
+	height: 269px;
+}
+#hero-img, #call-to-img{
+	background-size:cover;
+	background-repeat:no-repeat;
+}
+#hero-img p{
+	font-size:18px;
+}
+.nav-button span{
+	letter-spacing: 0.15em;	
+}
+.wp-post-image{
+	border-radius:none!important;
+}
+.certificate{
+	bottom: -10px;
+}
+.quick-contact{
+	top:680px;
+}
+.quick-contact img{
+	float: right;
+}
+.quick-contact{
+	top:435px;
+	z-index:9;
+}
+#social_icons li a{
+	color: transparent;
+}
+
+/* Height for devices larger than 992px */
+.case-study img{
+	object-fit: cover;
+    height: 234px;
+}
+#call-to-img{
+	height:398px;
+}
+
+/* Footer */
+footer .widget-title,
+.last-widget .footer_widget ul li a{
+    font-family: "Gotham", "Arial", sans-serif;
+    letter-spacing: -0.03em;
+    text-transform: capitalize;
+    font-weight: 800;
+	font-size:16px;
+	color:#F9423A;
+	margin-bottom:20px;
+}
+.footer_widget ul li a{
+	color:#131E29;
+	text-decoration:none;
+	font-size:14px;
+}
+.bootscore-info .copyright,
+.bootscore-info a.site_by,
+.bootscore-info #footer-privacy-menu a.nav-link{
+	color:#131E29;
+	font-size:16px;
+	display:inline;
+	text-decoration:none;
+	padding:16px;
+}
+
+@media (min-width: 992px) {
+	#hero-img {
+		height: 730px;
+	}
+	body:not(.home) #hero-img{
+		height: 464px;
+	}
+	#hero-img p{
+		max-width:500px;
+		font-size:20px;
+	}
+	.quick-contact{
+		top:680px;
+	}
+}
+@media (min-width:1200px){
+	h1{
+		font-size: 5.6rem;
+		line-height: 5.6rem;
+	}
+	h2, .h2 {
+		font-size: 3rem;
+	}
+	h4{
+		font-size: 40px;
+	}
+}
+@media (max-width:786px){
+	.quick-contact img{
+		max-width:60%;
+	}
+	.footer-logo img{
+		max-width:105px!important;
+	}
+	.filter-btn {
+		width: 100px;
+		height: 38px;
+		position:relative;
+		z-index:2;
+	}
+	.filter-btn a {
+		line-height: 38px;
+		text-align: left;
+		position: absolute;
+		left: 0;
+		right: 0;
+		top: 0;
+		bottom: 0;
+		padding: 0 15px;
+	}
+	.itens {
+		/*position: absolute;
+		overflow:hidden;*/
+		max-height:0;
+		opacity:0;
+		left: 0;
+		right: 0;
+		text-align: center;
+	}
+	.case-filter{
+		padding: 0;
+		position: relative;
+	}
+	.case-filter:target .itens {
+		max-height:initial;
+		opacity:1;
+	}
+	.case-filter:target .toggle { opacity:0; pointer-events: none;}
+	#cat-list button{width:100%}
+}

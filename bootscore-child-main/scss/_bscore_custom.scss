@@ -1,0 +1,22 @@
+/*!
+ * bootScore custom styles
+ */
+
+// Add your own code here!
+// Because this file is compiled after Bootstrap, you're also able to use Bootstrap mixins for better code.
+// Some examples can be found here: https://bootscore.me/documentation/bootstrap-css-sass
+
+$red: #F9423A;
+$primary: $red;
+$font-family-sans-serif: -apple-system, BlinkMacSystemFont, "Segoe UI", DM Sans, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+$enable-rounded: false;
+$enable-responsive-font-sizes: true;
+$secondary: $white;
+$code-color: $red;
+$blue: #131E29;
+$gray-100: #F9F9F9;
+$body-color: $blue;
+$body-bg: $gray-100;
+$kbd-color: $gray-100;
+$container-max-widths: ( sm: 540px, md: 720px, lg: 960px, xl: 1240px );
+$grid-breakpoints: ( xs: 0, sm: 576px, md: 768px, lg: 992px, xl: 1240px );
